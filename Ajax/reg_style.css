@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Grape+Nuts&family=Montserrat:ital,wght@0,300;1,300&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-image: linear-gradient(to left, rgba(116, 235, 213, 0.6), rgba(159, 172, 230, 0.6)),
+        url(https://img.freepik.com/premium-vector/seamless-tropical-fruits-pattern_1016-7110.jpg);
+    background-attachment: fixed;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#form {
+    width: 1200px;
+    margin: 20vh auto 0 auto;
+    background-color: beige;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #792099;
+}
+
+#form button {
+    background-image: linear-gradient(to right, #f6086e, #ff133a);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 300px;
+    height: 60px;
+    transition: all 500ms ease;
+}
+
+#form button:hover {
+    background-image: linear-gradient(to right, rgba(255, 0, 111, 0.8), rgba(247, 2, 43, 0.8)) !important;
+    color: #fff;
+    box-shadow: 6px 6px 5px rgb(231, 126, 126);
+}
+
+.input-group,
+.input-group1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    width: 300px;
+}
+
+.input-group label,
+.input-group1 label {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.input-group input,
+.input-group1 input,
+.input-group select,
+.input-group1 select {
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(62, 205, 207);
+    width: 300px;
+}
+
+.input-group select,
+.input-group1 select {
+    width: 324px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    outline: 0;
+    box-shadow: 0 0 5px rgba(246, 8, 110, 0.8);
+    border: 1px solid rgba(246, 8, 110, 0.8);
+}
+
+.input-group .error {
+    color: rgb(242, 18, 18);
+    font-size: 16px;
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+}
+
+.input-group.success input {
+    border-color: #0cc477;
+}
+
+/* .input-group.success input {
+    border-color: #2ecc71;
+} */
+
+.input-group.error input,
+.input-group.error select,
+.input-group.error .gender-options {
+    border-color: rgb(206, 67, 67);
+}
+
+.input-group.error small {
+    visibility: visible;
+}
+
+.input-group.success i.fa-circle-check {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+
+.input-group.error i.fa-circle-exclamation {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.gender-section {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+
+}
+
+.gender-label {
+    display: inline block;
+    width: 80px;
+}
+
+.gender-options label {
+    margin-right: 15px;
+}
+
+.gender-radio {
+    margin-right: 5px;
+}
+
+.input-group i {
+    position: absolute;
+    right: 1px;
+    top: 39px;
+    visibility: hidden;
+}
+
+.input-group small {
+    color: #e74c3c;
+    position: absolute;
+    margin-top: 75px;
+    left: 0;
+    visibility: hidden;
+}

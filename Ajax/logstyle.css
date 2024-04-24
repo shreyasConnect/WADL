@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-image: linear-gradient(to left, rgba(116, 235, 213, 0.6), rgba(159, 172, 230, 0.6)),
+        url(https://img.freepik.com/premium-vector/seamless-tropical-fruits-pattern_1016-7110.jpg);
+    background-attachment: fixed;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+    width: 400px;
+    margin: 20vh auto 0 auto;
+    background-color: beige;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #792099;
+}
+
+#form button {
+    background-image: linear-gradient(to right, #f6086e, #ff133a);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 90%;
+    height: 50px;
+    transition: all 500ms ease;
+}
+
+#form button:hover {
+    background-image: linear-gradient(to right, rgba(255, 0, 111, 0.8), rgba(247, 2, 43, 0.8)) !important;
+    color: #fff;
+    box-shadow: 6px 6px 5px rgb(231, 126, 126);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.input-group label {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.input-group input {
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(62, 205, 207);
+    width: 90%;
+}
+
+.input-group input:focus {
+    outline: 0;
+    box-shadow: 0 0 5px rgba(246, 8, 110, 0.8);
+    border: 1px solid rgba(246, 8, 110, 0.8);
+}
